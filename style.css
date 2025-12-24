@@ -62,19 +62,23 @@ h1 {
     color: #999;
 }
 
-.mode-toggle {
-    display: flex;
+.button-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 15px;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .btn-mode {
-    padding: 15px 40px;
+    padding: 15px 20px;
     background: transparent;
     color: #999;
     border: 1px solid #ddd;
-    flex: 0 1 auto;
+    width: 100%;
 }
 
 .btn-mode:hover {
@@ -93,15 +97,8 @@ h1 {
     border-color: #333;
 }
 
-.controls {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-
 .btn {
-    padding: 15px 40px;
+    padding: 15px 20px;
     font-size: 1em;
     border: 1px solid #333;
     border-radius: 0;
@@ -111,6 +108,7 @@ h1 {
     text-transform: none;
     letter-spacing: normal;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
 }
 
 .btn-primary {
