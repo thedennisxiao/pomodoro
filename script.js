@@ -15,11 +15,13 @@ class PomodoroTimer {
         this.sessionCountElement = document.getElementById('sessionCount');
         this.workBtn = document.getElementById('workBtn');
         this.restBtn = document.getElementById('restBtn');
+        this.addTimeBtn = document.getElementById('addTimeBtn');
         
         this.startPauseBtn.addEventListener('click', () => this.toggleTimer());
         this.resetBtn.addEventListener('click', () => this.resetTimer());
         this.workBtn.addEventListener('click', () => this.setWorkMode());
         this.restBtn.addEventListener('click', () => this.setRestMode());
+        this.addTimeBtn.addEventListener('click', () => this.addTime());
         
         this.updateModeButtons();
         this.updateDisplay();
@@ -85,6 +87,12 @@ class PomodoroTimer {
             this.restBtn.classList.add('btn-mode-active');
             this.workBtn.classList.remove('btn-mode-active');
         }
+    }
+    
+    addTime() {
+        // Add 5 minutes (300 seconds) to the current timer
+        this.timeLeft += 5 * 60;
+        this.updateDisplay();
     }
     
     completeSession() {

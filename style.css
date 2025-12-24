@@ -64,13 +64,21 @@ h1 {
 
 .button-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 15px;
     justify-content: center;
     margin-bottom: 30px;
-    max-width: 400px;
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.button-grid > #startPause {
+    grid-column: 1;
+}
+
+.button-grid > #reset {
+    grid-column: 2;
 }
 
 .btn-mode {
@@ -143,6 +151,23 @@ h1 {
 }
 
 .btn-secondary:active {
+    transform: none;
+}
+
+.btn-add {
+    background: transparent;
+    color: #333;
+    border-color: #333;
+}
+
+.btn-add:hover {
+    background: #333;
+    color: #fafafa;
+    transform: none;
+    box-shadow: none;
+}
+
+.btn-add:active {
     transform: none;
 }
 
