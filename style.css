@@ -74,11 +74,12 @@ h1 {
 }
 
 .btn-mode {
-    padding: 15px 20px;
+    padding: 7.5px 10px;
     background: transparent;
     color: #999;
     border: 1px solid #ddd;
     width: 100%;
+    border-radius: 8px;
 }
 
 .btn-mode:hover {
@@ -87,21 +88,22 @@ h1 {
 }
 
 .btn-mode-active {
-    background: transparent;
-    color: #333;
-    border-color: #333;
+    background: #1A1711;
+    color: white;
+    border-color: #1A1711;
 }
 
 .btn-mode-active:hover {
-    background: transparent;
-    border-color: #333;
+    background: #1A1711;
+    border-color: #1A1711;
+    color: white;
 }
 
 .btn {
-    padding: 15px 20px;
+    padding: 7.5px 10px;
     font-size: 1em;
     border: 1px solid #333;
-    border-radius: 0;
+    border-radius: 8px;
     cursor: pointer;
     font-weight: 400;
     transition: all 0.2s ease;
