@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: #fafafa;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: #fafafa;
+    border-radius: 0;
+    padding: 40px;
+    box-shadow: none;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 1.2em;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+.timer-display {
+    margin-bottom: 40px;
+}
+
+.time {
+    font-size: 5em;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 10px;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -2px;
+}
+
+.mode {
+    font-size: 1em;
+    color: #999;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+.mode.work {
+    color: #999;
+}
+
+.mode.break {
+    color: #999;
+}
+
+.mode-toggle {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.btn-mode {
+    padding: 10px 30px;
+    background: transparent;
+    color: #999;
+    border: 1px solid #ddd;
+    flex: 0 1 auto;
+}
+
+.btn-mode:hover {
+    background: #f5f5f5;
+    border-color: #999;
+}
+
+.btn-mode-active {
+    background: transparent;
+    color: #333;
+    border-color: #333;
+}
+
+.btn-mode-active:hover {
+    background: transparent;
+    border-color: #333;
+}
+
+.controls {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 15px 40px;
+    font-size: 1em;
+    border: 1px solid #333;
+    border-radius: 0;
+    cursor: pointer;
+    font-weight: 400;
+    transition: all 0.2s ease;
+    text-transform: none;
+    letter-spacing: normal;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.btn-primary {
+    background: transparent;
+    color: #333;
+}
+
+.btn-primary:hover {
+    background: #333;
+    color: #fafafa;
+    transform: none;
+    box-shadow: none;
+}
+
+.btn-primary:active {
+    transform: none;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #999;
+    border-color: #ddd;
+}
+
+.btn-secondary:hover {
+    background: #f5f5f5;
+    border-color: #999;
+    color: #333;
+    transform: none;
+}
+
+.btn-secondary:active {
+    transform: none;
+}
+
+.session-info {
+    color: #999;
+    font-size: 0.9em;
+    font-weight: 400;
+}
+
+.session-info span {
+    font-weight: 400;
+    color: #333;
+}
+
+@media (max-width: 600px) {
+    .time {
+        font-size: 3.5em;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    .btn {
+        padding: 12px 30px;
+        font-size: 1em;
+    }
+}
+
